@@ -19,7 +19,7 @@ export default function layout({ html }) {
             <div id="content"><slot></slot></div>
             <div id="foot">wtfjs is <a href="/license">free software</a>. get the <a href="http://github.com/brianleroux/wtfjs">source on github</a>. </div>
         </div>
-        <a href="http://github.com/brianleroux/wtfjs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+        <a href="http://github.com/brianleroux/wtfjs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="/_public/forkme_right_gray_6d6d6d.svg" alt="Fork me on GitHub" /></a>
         <script src="/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" charset="utf-8">
             var _gaq = _gaq || [];
