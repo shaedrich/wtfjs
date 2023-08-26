@@ -16,11 +16,15 @@
   "license": "WTFPL",
   "scripts": {
     "start": "sandbox",
-    "lint": "eslint ./app/**/*.mjs --fix"
+    "lint": "eslint ./app/**/*.mjs --fix",
+    "serve": "node index.mjs"
   },
   "dependencies": {
     "@enhance/arc-plugin-enhance": "^5.0.4",
-    "arcdown": "^2.1.1"
+    "@enhance/fastify-plugin": "^1.0.0",
+    "@fastify/static": "^6.10.2",
+    "arcdown": "^2.1.1",
+    "fastify": "^4.21.0"
   },
   "devDependencies": {
     "@architect/sandbox": "^5.5.4",

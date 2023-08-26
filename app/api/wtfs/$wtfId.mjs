@@ -5,7 +5,7 @@ const arcdown = new Arcdown()
 
 export async function get(req) {
     // Get requested path
-    const { path: activePath } = req
+    const activePath = req.path ?? req.rawPath
     let docPath = activePath.replace(/^\/?wtfs\//, '') || 'index'
     
     // Read markdown file
