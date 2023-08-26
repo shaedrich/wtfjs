@@ -1,4 +1,4 @@
-Less of a wtf and more of a gotcha. In  [ExpressJS](http://expressjs.com/). you can serve static files from a _/public_ directory with this simple directive in your configure block:
+Less of a wtf and more of a gotcha. In [ExpressJS](http://expressjs.com/). you can serve static files from a _/public_ directory with this simple directive in your configure block:
 
 ```
     configure(function() {
