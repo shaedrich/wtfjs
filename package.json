@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "@enhance/arc-plugin-enhance": "^5.0.4",
-    "arcdown": "^2.1.1"
+    "arcdown": "^2.1.1",
+    "marked": "^12.0.2"
   },
   "devDependencies": {
     "@architect/sandbox": "^5.5.4",

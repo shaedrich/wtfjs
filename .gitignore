@@ -14,3 +14,6 @@ sam.json
 sam.yaml
 
 .DS_Store
+
+# Static built
+static/
