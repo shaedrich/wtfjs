@@ -50,11 +50,15 @@ function renderSiteLayout(content) {
 
 function createIfNotExists(dir) {
     dir.split('/').reduce((path, segment) => {
-        if (!existsSync([...path, segment].join('/'))) {
-            fs.mkdir([...path, segment].join('/'))
+        const currentPath = [...path, segment]
+        if (!existsSync(currentPath.join('/'))) {
+            console.log(`Directory ${currentPath.join('/')} does not exist. Create ...`)
+            fs.mkdir(currentPath.join('/'))
+        } else {
+            console.log(`Directory ${currentPath.join('/')} does already exist. Skip.`)
         }
 
-        return [...path, segment]
+        return currentPath
     }, [])
 }
 
