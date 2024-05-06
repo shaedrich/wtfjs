@@ -1,0 +1,21 @@
+on:
+    push:
+      branches:
+        - feature/enhance.dev-rework
+  
+  jobs:
+    build:
+      runs-on: debian-latest
+      steps:
+        - uses: actions/checkout@v4
+        - uses: actions/setup-node@v4
+        - name: Install Dependencies
+          run: npm install
+        - run: node build-static.mjs
+        - name: 📂 Sync files
+          uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+          with:
+            server: ${{ secrets.ftp_host }}
+            username: ${{ secrets.ftp_username }}
+            password: ${{ secrets.ftp_password }}
+            local-dir: ./static/
