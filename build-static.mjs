@@ -49,12 +49,16 @@ function renderSiteLayout(content) {
 }
 
 function createIfNotExists(dir) {
-    if (!existsSync(dir)) {
-        fs.mkdir(dir)
-    }
+    dir.split('/').reduce((path, segment) => {
+        if (!existsSync([...path, segment].join('/'))) {
+            fs.mkdir([...path, segment].join('/'))
+        }
+
+        return [...path, segment]
+    }, [])
 }
 
-['static', 'static/assets/js'].forEach(createIfNotExists)
+['static/assets/js'].forEach(createIfNotExists)
 
 for(const file of mdFiles) {
     const raw = await fs.readFile(`${mdPath}/${file}`, { encoding: 'utf8' })
