@@ -64,7 +64,7 @@ function createIfNotExists(dir) {
 
 ['static/assets/js'].forEach(createIfNotExists)
 
-for(const file of mdFiles) {
+for(const file of mdFiles.reverse()) {
     const raw = await fs.readFile(`${mdPath}/${file}`, { encoding: 'utf8' })
     const parsed = marked.parse(raw)
     fs.writeFile(`static/${file.replace(/\.md$/, '.html')}`, renderPage(parsed))
