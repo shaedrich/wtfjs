@@ -27,7 +27,7 @@ function renderPage(content) {
             </h2>
 
             <div id="content">${content}</div>
-            <div id="foot">wtfjs is <a href="/license">free software</a>. get the <a href="http://github.com/shaedrich/wtfjs">source on github</a>. </div>
+            <div id="foot">wtfjs is <a href="/license.html">free software</a>. get the <a href="http://github.com/shaedrich/wtfjs">source on github</a>. </div>
             <a href="http://github.com/shaedrich/wtfjs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="data:application/xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEVycm9yPjxDb2RlPkFjY2Vzc0RlbmllZDwvQ29kZT48TWVzc2FnZT5BY2Nlc3MgRGVuaWVkPC9NZXNzYWdlPjxSZXF1ZXN0SWQ+UlRXM0NQQjFXNEtFUEZCWDwvUmVxdWVzdElkPjxIb3N0SWQ+UW1nM2ZJRkRxU1hLNkJ4NFJtUzBpdVVwMDJGUzFWdGJtT2tXOVh4K0MraHBGSmFuMDU2MDNzSDhMUWpKc2F4Qjl2OHhXaFIvRE5vPTwvSG9zdElkPjwvRXJyb3I+" alt="Fork me on GitHub" /></a>
         </div>
     </body>
