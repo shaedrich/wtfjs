@@ -19,7 +19,7 @@ export default function layout({ html }) {
             <div id="content"><slot></slot></div>
             <div id="foot">wtfjs is <a href="/license">free software</a>. get the <a href="http://github.com/shaedrich/wtfjs">source on github</a>. </div>
         </div>
-        <a href="http://github.com/shaedrich/wtfjs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+        <a href="http://github.com/shaedrich/wtfjs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="data:application/xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEVycm9yPjxDb2RlPkFjY2Vzc0RlbmllZDwvQ29kZT48TWVzc2FnZT5BY2Nlc3MgRGVuaWVkPC9NZXNzYWdlPjxSZXF1ZXN0SWQ+UlRXM0NQQjFXNEtFUEZCWDwvUmVxdWVzdElkPjxIb3N0SWQ+UW1nM2ZJRkRxU1hLNkJ4NFJtUzBpdVVwMDJGUzFWdGJtT2tXOVh4K0MraHBGSmFuMDU2MDNzSDhMUWpKc2F4Qjl2OHhXaFIvRE5vPTwvSG9zdElkPjwvRXJyb3I+" alt="Fork me on GitHub" /></a>
         <script src="/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" charset="utf-8">
             var _gaq = _gaq || [];
