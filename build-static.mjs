@@ -27,7 +27,7 @@ function renderPage(content) {
             </h2>
 
             <div id="content">${content}</div>
-            <div id="foot">wtfjs is <a href="/license">free software</a>. get the <a href="http://github.com/brianleroux/wtfjs">source on github</a>. </div>
+            <div id="foot">wtfjs is <a href="/license">free software</a>. get the <a href="http://github.com/shaedrich/wtfjs">source on github</a>. </div>
         </div>
     </body>
     </html>`

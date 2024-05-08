@@ -5,7 +5,7 @@
   "homepage": "wtfjs.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/brianleroux/wtfjs.git"
+    "url": "git://github.com/shaedrich/wtfjs.git"
   },
   "author": "Brian Leroux <brian@westcoastlogic.com>",
   "subdomain": "wtfjs",
