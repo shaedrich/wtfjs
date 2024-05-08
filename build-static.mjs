@@ -75,7 +75,7 @@ for(const file of mdFiles.reverse()) {
     const parsed = marked.parse(raw)
     fs.writeFile(`static/${file.replace(/\.md$/, '.html')}`, renderPage(parsed))
 }
-fs.cp('public', 'static/_public', { recursive: true })
+fs.cp('public', 'static/_public', { recursive: true });
 ['about', 'license'].forEach(renderStaticPage)
 fs.writeFile('static/index.html', renderPage(`<ul>${mdFiles.map(file => `<li><a href="./${file.replace(/\.md$/, '.html')}">${file.replace(/\.md$/, '')}</a></li>`).join('\n')}</ul>`))
 
