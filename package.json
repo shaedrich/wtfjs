@@ -1,8 +1,8 @@
 {
   "name": "wtf",
-  "description": "The wtfs of javascript at wtfjs.com",
+  "description": "The wtfs of javascript at wtfjs.org",
   "version": "5.0.2",
-  "homepage": "wtfjs.com",
+  "homepage": "wtfjs.org",
   "repository": {
     "type": "git",
     "url": "git://github.com/shaedrich/wtfjs.git"
@@ -10,6 +10,8 @@
   "author": "Brian Leroux <brian@westcoastlogic.com>",
   "subdomain": "wtfjs",
   "domains": [
+    "wtfjs.org",
+    "www.wtfjs.org",
     "wtfjs.com",
     "www.wtfjs.com"
   ],

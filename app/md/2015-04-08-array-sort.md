@@ -3,7 +3,7 @@
 // = [1,15,2,3,30,45,5,60,7]
 ```
 
-See [String Integers Comparison](https://wtfjs.com/wtfs/2014-03-13-String-Integers-Comparison) for the explanation.
+See [String Integers Comparison](https://wtfjs.org/wtfs/2014-03-13-String-Integers-Comparison) for the explanation.
 
 &mdash;[@stuartpb][]
 

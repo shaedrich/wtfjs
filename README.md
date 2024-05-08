@@ -14,7 +14,7 @@
 Share your wtfjs moment
 ---
 
-It has never been easier to contribute a wtf to wtfjs.com!
+It has never been easier to contribute a wtf to wtfjs.org!
 
 - fork this repo
 - add your wtf under `src/shared/md` (format: `yyyy-mm-dd-title.md`)
