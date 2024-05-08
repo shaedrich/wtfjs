@@ -63,6 +63,11 @@ function createIfNotExists(dir) {
     }, [])
 }
 
+async function renderStaticPage(page) {
+    const pageContent = await fs.readFile(`app/pages/${page}.html`)
+    fs.writeFile(`static/${page}.html`, renderPage/*renderSiteLayout*/(pageContent))
+}
+
 ['static/assets/js'].forEach(createIfNotExists)
 
 for(const file of mdFiles.reverse()) {
@@ -71,9 +76,7 @@ for(const file of mdFiles.reverse()) {
     fs.writeFile(`static/${file.replace(/\.md$/, '.html')}`, renderPage(parsed))
 }
 fs.cp('public', 'static/_public', { recursive: true })
-fs.copyFile('app/elements/site-layout.mjs', 'static/assets/js/site-layout.mjs')
-const aboutPage = await fs.readFile(`app/pages/about.html`)
-fs.writeFile('static/about.html', renderPage/*renderSiteLayout*/(aboutPage))
+['about', 'license'].forEach(renderStaticPage)
 fs.writeFile('static/index.html', renderPage(`<ul>${mdFiles.map(file => `<li><a href="./${file.replace(/\.md$/, '.html')}">${file.replace(/\.md$/, '')}</a></li>`).join('\n')}</ul>`))
 
 //console.log(mdFiles)
